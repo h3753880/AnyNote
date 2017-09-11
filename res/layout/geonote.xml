@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@drawable/desk"
+    android:orientation="vertical"
+    android:scrollbarStyle="outsideInset" >
+
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+		android:layout_weight="1"
+        android:textSize="20sp"
+        android:textColor="#0F0F0F"
+        android:text="@string/title" />
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:layout_weight="0.97"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:layout_weight="1">
+    
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+		android:layout_weight="1"
+        android:textSize="20sp"
+        android:textColor="#0F0F0F"
+        android:text="@string/content" />
+
+    <Button
+        android:id="@+id/photo"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/photo" />
+    
+    <Button
+        android:id="@+id/sound"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/sound" />
+    
+    </LinearLayout>
+    <EditText
+        android:id="@+id/editContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:layout_weight="0.85"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+        android:textColor="#0F0F0F"
+		android:layout_weight="1"
+        android:text="地理位置與提醒範圍設定" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:layout_weight="0.95">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:text="設定地理"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/chooseRange"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/startTime"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+		android:layout_weight="1"
+        android:textSize="20sp"
+        android:textColor="#0F0F0F"
+        android:text="時間設定"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:layout_weight="0.95">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:orientation="vertical" >
+
+            	<TextView
+            	    android:id="@+id/endTime"
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:text="尚未設定"
+            	    android:textColor="#0F0F0F"
+            	    android:textSize="15sp" />
+
+        </LinearLayout>
+        
+        		    <Button
+		            android:id="@+id/button5"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:textSize="18sp" 
+		            android:layout_weight="1"
+		            android:text="設定" />
+    </LinearLayout>
+
+ 
+
+
+
+
+
+
+
+        <Button
+            android:id="@+id/friends"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+			android:layout_weight="0.95"
+            android:textSize="18sp" 
+            android:text="@string/friends" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+			android:layout_weight="0.98">
+
+            <CheckBox
+                android:id="@+id/checkBoxIn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="進入時提醒"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxOut"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="離開時提醒"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+			android:layout_weight="0.95">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/OK"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/Cancel"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

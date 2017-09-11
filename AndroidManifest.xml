@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="anynote.client.android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />  
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        <activity
+            android:name="AnyNoteActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="TimeNoteActivity"
+            android:screenOrientation="portrait" 
+            android:configChanges="orientation">
+        </activity>
+        <activity
+            android:name=".Alarm.AlarmAlert"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <receiver
+            android:name=".Alarm.CallAlarm"
+            android:screenOrientation="portrait" >
+        </receiver>
+
+        <activity
+            android:name="Friend_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="SetActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="MemoryActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="ModifyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="BrowseActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name="Sync" >
+        </service>
+
+        <receiver android:name="BroadCast" >
+        </receiver>
+
+        <activity
+            android:name="GeoNoteActivity"
+            android:screenOrientation="portrait" 
+            android:configChanges="orientation">
+        </activity>
+        <activity
+            android:name="GeoRemindPoint"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="GeoTimeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name=".Alarm.GeoDetect" >
+        </service>
+
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name="SetTimeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="GeoModifyActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="ModifySetTimeActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="SearchActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="MemorySearchActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="showRemindPoint"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="ViewTimeNoteActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="ViewGeoNoteActivity"
+            android:screenOrientation="portrait"></activity>
+        <receiver android:name="ReSetAlarm">
+                <intent-filter>   
+			       <action android:name="android.intent.action.BOOT_COMPLETED" />   
+			       <category android:name="android.intent.category.LAUNCHER" />   
+			    </intent-filter>  
+        </receiver>
+        <service android:name="ReSetService"></service>
+    </application>
+
+</manifest>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, AnyNote!</string>
+    <string name="app_name">AnyNote</string>
+    <string name="title">標題</string>
+    <string name="content">內容</string>
+    <string name="cycle">週期</string>
+    <string name="friends">選擇被提醒人</string>
+    <string name="cycle01">一次性</string>
+    <string name="OK">OK</string>
+    <string name="Cancel">Cancel</string>
+    <string name="timeset">時間設定</string>
+    <string name="setTime">設置時間</string>
+    <string name="newTime">新增時間備忘</string>
+    <string name="newGeo">新增地理備忘</string>
+    <string name="manage">瀏覽</string>
+    <string name="set">設定</string>
+    <string name="memory">回憶模式</string>
+    <string name="login">登入</string>
+    <string name="white">#ffffffff</string>
+    <string name="setsync">開啟同步</string>
+    <string name="setVibrate">是否震動</string>
+    <string name="setVoice">鈴聲設定</string>
+    <string name="setVoicenum">鈴聲大小</string>
+    <string name="logout">登出</string>
+    <string name="toMain">回首頁</string>
+    <string name="close">關閉</string>
+	    <integer-array name="chooseRange">
+        <item >200</item>
+        <item >450</item>
+        <item >700</item>
+        <item >950</item>
+        <item >1200</item>
+    </integer-array>
+        <string name="set_time_date">日期設定</string>
+        <string name="time_set">時間設定</string>
+        <string name="finish">完成</string>
+        <string name="cancel">取消</string>
+        <string name="photo">拍照!!</string>
+        <string name="cancelVoice">取消鈴聲</string>
+        <string name="sound">錄音</string>
+        <string name="Fav">喜愛點</string>
+</resources>

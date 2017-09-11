@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/desk"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/searchTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="25sp"
+        android:textColor="#0F0F0F"
+   	android:layout_weight="1"
+        android:text="輸入查詢標題" />
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+   	android:layout_weight="0.95">
+
+        <requestFocus />
+    </EditText>
+    <TextView
+        android:id="@+id/searchTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="25sp"
+        android:textColor="#0F0F0F"
+   	android:layout_weight="1"
+        android:text="輸入查詢內容" />
+
+    <EditText
+        android:id="@+id/searchContentText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+   	android:layout_weight="0.95" >
+
+        <requestFocus />
+    </EditText>
+
+
+
+
+    <Button
+        android:id="@+id/searchFriendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+   	android:layout_weight="0.97"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:textSize="15sp"
+        android:text="查詢好友設定" />
+
+
+
+    <DatePicker
+        android:id="@+id/searchDatePicker"
+        android:layout_width="match_parent"
+   	android:layout_weight="0.8"
+        android:layout_height="match_parent" />
+
+    <Spinner
+        android:id="@+id/spinnerSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+   	android:layout_weight="0.95"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+  	android:layout_weight="0.97">
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:text="搜尋" />
+
+
+        <Button
+            android:id="@+id/allButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:text="顯示全部" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:text="取消" />
+
+    </LinearLayout>
+
+</LinearLayout>

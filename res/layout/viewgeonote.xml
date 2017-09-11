@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/desk" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="關閉"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="test"
+            android:textColor="#0F0F0F"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/showRemindPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/close"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="17dp"
+            android:text="顯示地理位置"
+          android:textColor="#0B0B3B"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/showImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/showRemindPoint"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="18dp"
+            android:text="顯示圖片"
+            android:textColor="#0B0B3B"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/playSound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/showImg"
+            android:layout_alignParentRight="true"
+            android:text="播放錄音"             
+            android:textColor="#0B0B3B"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

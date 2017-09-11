@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewSnsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/desk"
+    android:orientation="vertical"
+     >
+
+    <TextView
+        android:id="@+id/browsetitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/title"
+        android:textColor="#0F0F0F"
+        android:textSize="25sp" />
+
+<ListView
+      android:id="@+id/android:list"
+      android:layout_width="fill_parent"
+      android:layout_height="match_parent"
+       android:divider="#b55d05" 
+       android:cacheColorHint="#00000000"
+       android:dividerHeight="1.5sp" >
+      <!-- Preview: listitem=@android:layout/simple_list_item_2 -->
+
+  </ListView>
+
+
+</LinearLayout>

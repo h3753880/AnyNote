@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/desk"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/title"
+        android:textSize="25sp"         android:textColor="#0F0F0F"
+        android:layout_weight="1" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:singleLine="true"
+        android:layout_weight="0.97" >
+        <requestFocus />
+    </EditText>
+    <LinearLayout        android:id="@+id/linearLayout1"        android:layout_width="match_parent"        android:layout_height="match_parent"        android:gravity="center"        android:layout_weight="1" >
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/content"
+        android:textSize="25sp"        android:textColor="#0F0F0F"
+        android:layout_weight="1" />
+    <Button        android:id="@+id/photo"        style="?android:attr/buttonStyleSmall"        android:layout_width="wrap_content"        android:layout_height="wrap_content"        android:layout_weight="1"        android:text="@string/photo" />
+    <Button        android:id="@+id/sound"        style="?android:attr/buttonStyleSmall"        android:layout_width="wrap_content"        android:layout_height="wrap_content"        android:layout_weight="1"        android:text="@string/sound" />                                </LinearLayout>                            <EditText        android:id="@+id/editText2"        android:layout_width="match_parent"        android:layout_height="match_parent"        android:layout_weight="0.8"        android:inputType="textMultiLine"        android:singleLine="false" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/timeset"
+        android:textSize="25sp"        android:textColor="#0F0F0F"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="0.98" >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="timeDisplay"             android:textColor="#0F0F0F"
+            android:textSize="20sp" 
+            />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            android:textSize="20sp" 
+            android:text="@string/setTime" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/cycle"         android:textColor="#0F0F0F"
+        android:textSize="25sp" />
+
+	    <Spinner
+	        android:id="@+id/timespinner"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" 
+	        android:layout_weight="0.96"/>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.95"            android:textSize="20sp"
+            android:text="@string/friends" />
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent" 
+	            android:layout_weight="0.97">
+	
+	            <Button
+	                android:id="@+id/button2"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1"	                android:textSize="20sp"
+	                android:text="@string/OK" />
+	
+	            <Button
+	                android:id="@+id/button3"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1"	                android:textSize="20sp"
+	                android:text="@string/Cancel" />
+	
+	        </LinearLayout>
+
+
+</LinearLayout>
+
